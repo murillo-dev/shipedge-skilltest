@@ -22,6 +22,27 @@ export const routes: Routes = [
             (comp) => comp.HomeComponent
           ),
       },
+      {
+        path: 'contact',
+        loadComponent: () =>
+          import('./pages/contact/contact.component').then(
+            (comp) => comp.ContactComponent
+          ),
+      },
+      {
+        path: 'users',
+        loadComponent: () =>
+          import('./pages/users/users.component').then(
+            (comp) => comp.UsersComponent
+          ),
+      },
+      {
+        path: 'posts',
+        loadComponent: () =>
+          import('./pages/posts/posts.component').then(
+            (comp) => comp.PostsComponent
+          ),
+      },
     ],
   },
 ];

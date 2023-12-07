@@ -6,9 +6,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import {MatExpansionModule} from '@angular/material/expansion';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-pages',
@@ -21,8 +22,10 @@ import { RouterOutlet } from '@angular/router';
     MatSidenavModule,
     MatListModule,
     MatIconModule,
+    MatExpansionModule,
     AsyncPipe,
-    RouterOutlet
+    RouterOutlet,
+    RouterLink
   ]
 })
 export class PagesComponent {
